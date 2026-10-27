@@ -73,7 +73,7 @@ export const CONFIG = {
     files: {
       'cover-inside': 'cover.jpg',
       'page-01': 'cover-inside.jpg',
-      'page-03': 'page-01.jpg',
+      'page-02': 'page-01.jpg',
       'back-inside': 'page-20.jpg',
     },
   },
