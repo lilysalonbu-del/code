@@ -3,19 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Book</title>
+<title>Book Animation</title>
 <style>
   html, body { margin: 0; height: 100%; background: #0b0b0e; overflow: hidden; }
   canvas { display: block; }
 </style>
 <script type="importmap">
-{ "imports": {
-    "three": "./vendor/three/build/three.module.js",
-    "three/addons/": "./vendor/three/examples/jsm/"
-} }
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+  }
+}
 </script>
 </head>
 <body>
-<script type="module" src="js/main.js"></script>
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>

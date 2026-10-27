@@ -10,7 +10,7 @@ import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { startServer } from './server.js';
-import { CONFIG } from './config.js';
+import { CONFIG } from './js/config.js';
 
 const argv = process.argv.slice(2);
 const opt = {};

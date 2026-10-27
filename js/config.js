@@ -68,13 +68,13 @@ export const CONFIG = {
   // Images currently uploaded to the repository root, mapped to their
   // intended semantic surfaces. Missing artwork uses the procedural fallback.
   skin: {
-    dir: '',
+    dir: './skin/',
     exts: ['jpg', 'png', 'jpeg', 'webp'],
     files: {
-      'cover-inside': 'cover.jpg',
-      'page-01': 'cover-inside.jpg',
-      'page-02': 'page-01.jpg',
-      'back-inside': 'page-20.jpg',
+      'cover': 'cover.jpg',
+      'cover-inside': 'cover-inside.jpg',
+      'page-01': 'page-01.jpg',
+      'back-inside': 'back-inside.jpg',
     },
   },
 };
