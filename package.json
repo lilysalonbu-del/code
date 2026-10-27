@@ -1,0 +1,14 @@
+{
+  "name": "book-animation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js 8000",
+    "render": "node render.js",
+    "stills": "node render.js --stills 1,4,5,8,9,12,16,19"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}
