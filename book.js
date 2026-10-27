@@ -195,7 +195,6 @@ export class Book {
     spine.castShadow = spine.receiveShadow = true;
     this.group.add(spine);
 
-    this.staticDone = false;
   }
 
   // stack-centre heights
@@ -230,9 +229,9 @@ export class Book {
     for (const leaf of this.leaves) {
       const k = leaf.k;
       if (k === N - 1) {
-        if (this.staticDone) continue;
-        leaf.update(c / 2, () => 0);
-        this.staticDone = true;
+        // The back cover opens at the end so its inside artwork can be read.
+        const back = this.turnState(k, time);
+        leaf.update(lerp(c / 2, this.hRight(0), back.e), () => PI * back.e);
         continue;
       }
       const s = this.turnState(k, time);
